@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bomb.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Me.h" />
@@ -194,6 +195,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Me.cpp" />

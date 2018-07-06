@@ -42,6 +42,9 @@
     <ClInclude Include="Me.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneGame.cpp">
@@ -63,6 +66,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Me.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
