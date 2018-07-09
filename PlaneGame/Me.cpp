@@ -28,7 +28,7 @@ BOOL CMe::Draw(CDC* pDC, BOOL bPause)
 
 BOOL CMe::LoadImage()
 {
-	return CGameObject::LoadImageW(m_Images, IDB_ME, RGB(0, 0, 0), 50, 60, 1);
+	return CGameObject::LoadImageW(m_Images, IDB_Plane, RGB(0, 0, 0), 60, 76, 1);
 }
 
 BOOL CMe::Fired()

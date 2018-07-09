@@ -220,6 +220,18 @@
   <ItemGroup>
     <Image Include="res\ball.BMP" />
     <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bmp\bg.bmp" />
+    <Image Include="res\bmp\big.bmp" />
+    <Image Include="res\bmp\blue_bullet.bmp" />
+    <Image Include="res\bmp\bomb.bmp" />
+    <Image Include="res\bmp\bomb_award.bmp" />
+    <Image Include="res\bmp\bullet_award.bmp" />
+    <Image Include="res\bmp\explosion.bmp" />
+    <Image Include="res\bmp\middle.bmp" />
+    <Image Include="res\bmp\pause2.bmp" />
+    <Image Include="res\bmp\plane.bmp" />
+    <Image Include="res\bmp\small.bmp" />
+    <Image Include="res\bmp\yellow_bullet.bmp" />
     <Image Include="res\bomb.bmp" />
     <Image Include="res\enemy.bmp" />
     <Image Include="res\explosion.BMP" />
