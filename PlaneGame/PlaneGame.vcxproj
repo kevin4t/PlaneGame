@@ -190,6 +190,7 @@
     <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Explosion.h" />
+    <ClInclude Include="Explosion_me.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Me.h" />
@@ -208,6 +209,7 @@
     <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="Explosion_me.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Me.cpp" />
@@ -238,6 +240,7 @@
     <Image Include="res\bmp\buff.bmp" />
     <Image Include="res\bmp\bullet_award.bmp" />
     <Image Include="res\bmp\explosion.bmp" />
+    <Image Include="res\bmp\explosion_me.bmp" />
     <Image Include="res\bmp\get_heart.bmp" />
     <Image Include="res\bmp\heart.bmp" />
     <Image Include="res\bmp\heart_grey.bmp" />

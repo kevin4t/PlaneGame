@@ -63,6 +63,9 @@
     <ClInclude Include="Bomb_enemy.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Explosion_me.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneGame.cpp">
@@ -105,6 +108,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Bomb_enemy.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion_me.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -195,6 +201,9 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\bmp\buff.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\explosion_me.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
