@@ -2,6 +2,7 @@
 #include "Bomb.h"
 #include "resource.h"
 
+CImageList CBomb::m_Images;
 
 CBomb::~CBomb(void)
 {
@@ -19,4 +20,3 @@ BOOL CBomb::LoadImage()
 	return CGameObject::LoadImageW(m_Images, IDB_blue_bullet, RGB(0, 0, 0), 4, 10, 1);
 }
 
-CImageList CBomb::m_Images;

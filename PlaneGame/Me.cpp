@@ -23,9 +23,9 @@ BOOL CMe::Draw(CDC* pDC, BOOL bPause)
 	m_nHorMotion = 0;
 	m_nVerMotion = 0;
 	if (m_ptPos.x < 0)m_ptPos.x += 10;
-	if (m_ptPos.x >650-77)m_ptPos.x -= 10;
+	if (m_ptPos.x > 650-77)m_ptPos.x -= 10;
 	if (m_ptPos.y < 0)m_ptPos.y += 10;
-	if (m_ptPos.y > 750-76)m_ptPos.y -= 10;
+	if (m_ptPos.y > 1000-116)m_ptPos.y -= 10;
 	return m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
 }
 

@@ -184,8 +184,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="backgroud.h" />
+    <ClInclude Include="Blood.h" />
     <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Explosion.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Me.h" />
@@ -198,8 +201,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="backgroud.cpp" />
+    <ClCompile Include="Blood.cpp" />
     <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Me.cpp" />
@@ -227,8 +233,13 @@
     <Image Include="res\bmp\blue_bullet.bmp" />
     <Image Include="res\bmp\bomb.bmp" />
     <Image Include="res\bmp\bomb_award.bmp" />
+    <Image Include="res\bmp\buff.bmp" />
     <Image Include="res\bmp\bullet_award.bmp" />
     <Image Include="res\bmp\explosion.bmp" />
+    <Image Include="res\bmp\get_heart.bmp" />
+    <Image Include="res\bmp\heart.bmp" />
+    <Image Include="res\bmp\heart_grey.bmp" />
+    <Image Include="res\bmp\heart_red.bmp" />
     <Image Include="res\bmp\middle.bmp" />
     <Image Include="res\bmp\pause2.bmp" />
     <Image Include="res\bmp\plane.bmp" />

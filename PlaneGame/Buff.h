@@ -1,20 +1,19 @@
 #pragma once
 #include "GameObject.h"
-class Cbackgroud :
+class CBuff :
 	public CGameObject
 {
 public:
-	Cbackgroud();
-	~Cbackgroud();
-
+	CBuff();
+	~CBuff();
 	BOOL Draw(CDC* pDC, BOOL bPause);
 
-	CRect CGameObject::GetRect()
-	{
-		return CRect(m_ptPos, CPoint(650,1000));
-	}
-
 	static BOOL LoadImage();
+
+	CRect GetRect()
+	{
+		return CRect(m_ptPos, CPoint(m_ptPos.x + 60, m_ptPos.y + 107));
+	}
 private:
 	static CImageList m_Images;
 };

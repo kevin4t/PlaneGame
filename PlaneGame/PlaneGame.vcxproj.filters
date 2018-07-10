@@ -51,6 +51,15 @@
     <ClInclude Include="backgroud.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Blood.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Buff.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneGame.cpp">
@@ -81,6 +90,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="backgroud.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Blood.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Buff.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -156,6 +174,21 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\bmp\yellow_bullet.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\heart_grey.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\heart_red.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\heart.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\get_heart.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\buff.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
