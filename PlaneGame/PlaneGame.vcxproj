@@ -258,6 +258,10 @@
     <Image Include="res\PlaneGameDoc.ico" />
     <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="C:\Users\葉蕖\Desktop\bullet.wav" />
+    <Media Include="C:\Users\葉蕖\Desktop\用VC写的飞机大战游戏源码\Resources\sound\bullet.mp3" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

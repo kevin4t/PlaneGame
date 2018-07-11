@@ -207,4 +207,10 @@
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="C:\Users\葉蕖\Desktop\用VC写的飞机大战游戏源码\Resources\sound\bullet.mp3" />
+    <Media Include="C:\Users\葉蕖\Desktop\bullet.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+  </ItemGroup>
 </Project>
