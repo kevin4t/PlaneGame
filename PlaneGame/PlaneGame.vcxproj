@@ -189,6 +189,7 @@
     <ClInclude Include="Bomb_enemy.h" />
     <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy_middle.h" />
     <ClInclude Include="Explosion.h" />
     <ClInclude Include="Explosion_me.h" />
     <ClInclude Include="GameObject.h" />
@@ -208,6 +209,7 @@
     <ClCompile Include="Bomb_enemy.cpp" />
     <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy_middle.cpp" />
     <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="Explosion_me.cpp" />
     <ClCompile Include="GameObject.cpp" />

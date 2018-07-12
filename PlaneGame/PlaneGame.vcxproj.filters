@@ -66,6 +66,9 @@
     <ClInclude Include="Explosion_me.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Enemy_middle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneGame.cpp">
@@ -111,6 +114,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Explosion_me.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_middle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

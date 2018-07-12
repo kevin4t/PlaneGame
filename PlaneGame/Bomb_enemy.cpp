@@ -29,5 +29,5 @@ BOOL CBomb_enemy::Draw(CDC* pDC, BOOL bPause)
 }
 BOOL CBomb_enemy::LoadImage()
 {
-	return CGameObject::LoadImage(m_Images, IDB_yellow_bullet, RGB(0, 0, 0), 4, 18, 1);
+	return CGameObject::LoadImage(m_Images, IDB_yellow_bullet, RGB(0, 0, 0), 4, 10, 1);
 }

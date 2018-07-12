@@ -13,7 +13,7 @@ CExplosion_me::~CExplosion_me()
 
 BOOL CExplosion_me::Draw(CDC* pDC, BOOL bPause)
 {
-	if (m_nProcess == 4)
+	if (m_nProcess == 13)
 	{
 		m_nProcess = 0;
 		return FALSE;
