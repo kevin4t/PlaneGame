@@ -37,6 +37,9 @@ public:
 	//是否可以开火发射导弹
 	BOOL Fired();
 
+	//设置坐标
+	void SetPoint(int,int);
+
 public:
 	static const int PLANE_WIDTH = 50;
 	static const int PLANE_HEIGHT = 60;

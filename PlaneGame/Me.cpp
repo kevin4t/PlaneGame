@@ -38,3 +38,9 @@ BOOL CMe::Fired()
 {
 	return true;
 }
+
+void CMe::SetPoint(int x = 0, int y = 0)
+{
+	m_ptPos.x = x;
+	m_ptPos.y = y;
+}
