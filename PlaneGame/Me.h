@@ -33,6 +33,11 @@ public:
 	{
 		return CRect(m_ptPos, CPoint(m_ptPos.x + PLANE_WIDTH, m_ptPos.y + PLANE_HEIGHT));
 	}
+	//子弹
+	int GetBullet()
+	{
+		return m_bullet;
+	}
 
 	//是否可以开火发射导弹
 	BOOL Fired();
@@ -49,4 +54,5 @@ private:
 	int    m_nHorMotion;//飞机水平运行方向0->静止，1->右 -1->左
 	int    m_nVerMotion;//飞机垂直运行方向0->静止，1->上 -1->下
 	int    m_nWait;//发射延时
+	int    m_bullet=2;//子弹类型
 };

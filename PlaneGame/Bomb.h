@@ -5,9 +5,12 @@ class CBomb :
 	public CGameObject
 {
 public:
-	CBomb(int x, int y) :CGameObject(x, y) {};
+	CBomb(int x, int y, int c) :CGameObject(x, y), change(c)
+	{
+		px = x; py = y;
+	}
 	~CBomb(void);
-
+	
 	BOOL Draw(CDC* pDC, BOOL bPause);
 
 	static BOOL LoadImage();
@@ -19,5 +22,6 @@ public:
 private:
 	static const int BOMB_HEIGHT = 20;
 	static CImageList m_Images;
-
+	int change;
+	int px,py;
 };

@@ -187,6 +187,7 @@
     <ClInclude Include="Blood.h" />
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="Bomb_enemy.h" />
+    <ClInclude Include="Boss.h" />
     <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Enemy_middle.h" />
@@ -208,6 +209,7 @@
     <ClCompile Include="Blood.cpp" />
     <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Bomb_enemy.cpp" />
+    <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Enemy_middle.cpp" />

@@ -8,6 +8,7 @@ CMe::CMe(void)
 	m_ptPos.y = 400;
 	m_nHorMotion = 0;
 	m_nVerMotion = 0;
+	m_nWait = 0;
 }
 
 CMe::~CMe(void)
@@ -18,6 +19,9 @@ CImageList CMe::m_Images;
 
 BOOL CMe::Draw(CDC* pDC, BOOL bPause)
 {
+	m_nWait++;
+	if (m_nWait>3)
+	m_nWait = 0;
 	m_ptPos.x = m_ptPos.x + m_nHorMotion * 10;
 	m_ptPos.y = m_ptPos.y + m_nVerMotion * 10;
 	m_nHorMotion = 0;
@@ -36,7 +40,10 @@ BOOL CMe::LoadImage()
 
 BOOL CMe::Fired()
 {
-	return true;
+   if (m_nWait == 0)
+		return TRUE;
+	else
+		return FALSE;
 }
 
 void CMe::SetPoint(int x = 0, int y = 0)

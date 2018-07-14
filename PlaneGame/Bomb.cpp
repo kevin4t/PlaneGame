@@ -10,8 +10,52 @@ CBomb::~CBomb(void)
 
 BOOL CBomb::Draw(CDC* pDC, BOOL bPause)
 {
-	m_ptPos.y = m_ptPos.y - 15;
-	//if(m_ptPos.y<20) return false;
+	if(change==0)
+	m_ptPos.y = m_ptPos.y - 12;
+	if (change == 1)//ÓÒÆ«
+	{
+		m_ptPos.x = m_ptPos.x + 6;
+		m_ptPos.y = m_ptPos.y - 12;
+	}
+	if (change == 2)
+	{
+		m_ptPos.x = m_ptPos.x + 9;
+		m_ptPos.y = m_ptPos.y - 9;
+	}
+	if (change == -1)//×óÆ«
+	{
+		m_ptPos.x = m_ptPos.x - 6;
+		m_ptPos.y = m_ptPos.y - 12;
+	}
+	if (change == -2)
+	{
+		m_ptPos.x = m_ptPos.x - 9;
+		m_ptPos.y = m_ptPos.y - 9;
+	}
+	if (change == 3)
+	{
+		if (m_ptPos.x - px < 50)
+		{
+			m_ptPos.x = m_ptPos.x + 4;
+			m_ptPos.y = m_ptPos.y - 2;
+		}
+		else
+		{
+			m_ptPos.y = m_ptPos.y - 12;
+		}
+	}
+	if (change == -3)
+	{
+		if (m_ptPos.x - px > -50)
+		{
+			m_ptPos.x = m_ptPos.x - 4;
+			m_ptPos.y = m_ptPos.y - 2;
+		}
+		else
+		{
+			m_ptPos.y = m_ptPos.y - 12;
+		}
+	}
 	return m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
 }
 
@@ -19,4 +63,3 @@ BOOL CBomb::LoadImage()
 {
 	return CGameObject::LoadImageW(m_Images, IDB_blue_bullet, RGB(0, 0, 0), 4, 10, 1);
 }
-
