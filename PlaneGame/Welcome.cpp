@@ -30,8 +30,12 @@ void CWelcome::OK()
 {
 	Selected = TRUE;
 }
+void CWelcome::No()
+{
+	Selected = FALSE;
+}
 
-BOOL CWelcome::Draw(CDC* pDC, BOOL bPause)
+int CWelcome::Draw(CDC* pDC, BOOL bPause)
 {
 
 	if (Mode == 0)

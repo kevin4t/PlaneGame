@@ -1,10 +1,14 @@
 #pragma once
 #include "GameObject.h"
+#include "Enemy.h"
 #include "Me.h"
 class CEnemy_middle :
-	public CGameObject
+	public CEnemy
 {
 public:
+	//枚举
+	enum ObjType { enEnemy, enBomb, enBall, enExplosion, enBlood, enBuff };
+
 	CEnemy_middle(CMe*);
 	~CEnemy_middle();
 	BOOL Draw(CDC* pDC, BOOL bPause);
@@ -13,17 +17,23 @@ public:
 
 	CRect GetRect()
 	{
-		return CRect(m_ptPos, CPoint(m_ptPos.x + 38, m_ptPos.y + 38));
+		return CRect(m_ptPos, CPoint(m_ptPos.x + ENEMY_HEIGHT, m_ptPos.y + ENEMY_HEIGHT));
 	}
 
-	int GetMontion() const
+	int GetMontion() 
 	{
 		return m_nMotion;
 	}
+
+	BOOL Attacked(int&);
+
+	void AddBomb(CObList*, CMe*);
+
+
 private:
+	static const int ENEMY_HEIGHT = 38;
 	static CImageList m_Images;
-	int    m_nMotion;//方向 1~12 从12点方向顺时针
-	int m_nImgIndex;//图像索引
 	CMe *pPlane;
+	
 };
 

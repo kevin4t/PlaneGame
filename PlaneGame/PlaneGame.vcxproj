@@ -190,10 +190,13 @@
     <ClInclude Include="Boss.h" />
     <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Enemy_small.h" />
     <ClInclude Include="Enemy_middle.h" />
+    <ClInclude Include="EnterName.h" />
     <ClInclude Include="Explosion.h" />
     <ClInclude Include="Explosion_me.h" />
     <ClInclude Include="GameObject.h" />
+    <ClInclude Include="HttpClient.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Me.h" />
     <ClInclude Include="PlaneGame.h" />
@@ -212,10 +215,13 @@
     <ClCompile Include="Boss.cpp" />
     <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Enemy_small.cpp" />
     <ClCompile Include="Enemy_middle.cpp" />
+    <ClCompile Include="EnterName.cpp" />
     <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="Explosion_me.cpp" />
     <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="HttpClient.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Me.cpp" />
     <ClCompile Include="PlaneGame.cpp" />
@@ -240,6 +246,7 @@
     <Image Include="res\bitmap1.bmp" />
     <Image Include="res\bmp\bg.bmp" />
     <Image Include="res\bmp\big.bmp" />
+    <Image Include="res\bmp\bitmap10.bmp" />
     <Image Include="res\bmp\blue_bullet.bmp" />
     <Image Include="res\bmp\bomb.bmp" />
     <Image Include="res\bmp\bomb_award.bmp" />

@@ -33,10 +33,6 @@ CEnemy_middle::CEnemy_middle(CMe* p):pPlane(p)
 	}
 	}
 
-	//≤‚ ‘ ˝æ›
-	//m_nMotion = 4;
-	//m_ptPos.x = 300;
-	//m_ptPos.y = 300;
 }
 CEnemy_middle::~CEnemy_middle(void)
 {
@@ -150,4 +146,13 @@ BOOL CEnemy_middle::Draw(CDC* pDC, BOOL bPause)
 
 	m_Images.Draw(pDC, m_nMotion, m_ptPos, ILD_TRANSPARENT);
 	return TRUE;
+}
+BOOL CEnemy_middle::Attacked(int& score)
+{
+	score++;
+	return TRUE;
+}
+void CEnemy_middle::AddBomb(CObList* listObj, CMe* myPlane)
+{
+	return;
 }

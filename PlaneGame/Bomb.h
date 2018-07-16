@@ -5,7 +5,7 @@ class CBomb :
 	public CGameObject
 {
 public:
-	CBomb(int x, int y, int c) :CGameObject(x, y), change(c)
+	CBomb(int x, int y, int c, int type) :CGameObject(x, y), change(c), m_BulletType(type)
 	{
 		px = x; py = y;
 	}
@@ -24,4 +24,5 @@ private:
 	static CImageList m_Images;
 	int change;
 	int px,py;
+	int m_BulletType;
 };

@@ -9,6 +9,7 @@ CMe::CMe(void)
 	m_nHorMotion = 0;
 	m_nVerMotion = 0;
 	m_nWait = 0;
+	m_NoEnemy = FALSE;
 }
 
 CMe::~CMe(void)
@@ -21,16 +22,25 @@ BOOL CMe::Draw(CDC* pDC, BOOL bPause)
 {
 	m_nWait++;
 	if (m_nWait>3)
-	m_nWait = 0;
+		 m_nWait = 0;
 	m_ptPos.x = m_ptPos.x + m_nHorMotion * 10;
 	m_ptPos.y = m_ptPos.y + m_nVerMotion * 10;
 	m_nHorMotion = 0;
 	m_nVerMotion = 0;
+
+	//防止飞机出界
 	if (m_ptPos.x < 0)m_ptPos.x += 10;
 	if (m_ptPos.x > 650-77)m_ptPos.x -= 10;
 	if (m_ptPos.y < 0)m_ptPos.y += 10;
 	if (m_ptPos.y > 1000-116)m_ptPos.y -= 10;
-	return m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
+
+	//无敌时间限制
+	if (m_NoEnemy == TRUE)
+	{
+		m_nCount++;
+	}
+	if (m_nCount == 200)m_NoEnemy = FALSE;
+	return m_Images.Draw(pDC, m_NoEnemy, m_ptPos, ILD_TRANSPARENT);
 }
 
 BOOL CMe::LoadImage()
@@ -40,14 +50,28 @@ BOOL CMe::LoadImage()
 
 BOOL CMe::Fired()
 {
-   if (m_nWait == 0)
-		return TRUE;
+	if (m_nWait == 0)
+		 return TRUE;
 	else
-		return FALSE;
+		 return FALSE;
 }
 
 void CMe::SetPoint(int x = 0, int y = 0)
 {
 	m_ptPos.x = x;
 	m_ptPos.y = y;
+}
+
+void CMe:: WhosYourDaddy(BOOL TF)
+{
+	if (TF == TRUE)
+	{
+		m_nCount = 0;
+	}
+ 	m_NoEnemy = TF;
+}
+
+BOOL CMe::IsNoEnemy()
+{
+	return m_NoEnemy;
 }

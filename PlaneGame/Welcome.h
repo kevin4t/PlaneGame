@@ -9,7 +9,8 @@ public:
 	~CWelcome();
 	void SelectMode(int);	//0ио 1об
 	void OK();
-	BOOL Draw(CDC* pDC, BOOL bPause);
+	void No();
+	int Draw(CDC* pDC, BOOL bPause);
 	static BOOL LoadImage();
 
 	CRect GetRect()

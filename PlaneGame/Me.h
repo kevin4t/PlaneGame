@@ -33,17 +33,28 @@ public:
 	{
 		return CRect(m_ptPos, CPoint(m_ptPos.x + PLANE_WIDTH, m_ptPos.y + PLANE_HEIGHT));
 	}
-	//子弹
-	int GetBullet()
-	{
-		return m_bullet;
-	}
 
 	//是否可以开火发射导弹
 	BOOL Fired();
 
 	//设置坐标
 	void SetPoint(int,int);
+
+	//无敌模式
+	void WhosYourDaddy(BOOL);
+	BOOL IsNoEnemy();
+
+
+	//获取子弹类型
+	int GetBullet()
+	{
+		return m_bullet;
+	}
+
+	void SetBullet(int type)
+	{
+		m_bullet = type;
+	}
 
 public:
 	static const int PLANE_WIDTH = 50;
@@ -54,5 +65,7 @@ private:
 	int    m_nHorMotion;//飞机水平运行方向0->静止，1->右 -1->左
 	int    m_nVerMotion;//飞机垂直运行方向0->静止，1->上 -1->下
 	int    m_nWait;//发射延时
-	int    m_bullet=2;//子弹类型
+	BOOL   m_NoEnemy;
+	int	   m_nCount;//无敌时间
+	int    m_bullet = 0;//子弹类型
 };

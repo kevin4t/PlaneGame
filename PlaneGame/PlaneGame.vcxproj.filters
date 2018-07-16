@@ -45,9 +45,6 @@
     <ClInclude Include="Bomb.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Blood.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -72,7 +69,19 @@
     <ClInclude Include="Welcome.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="HttpClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="EnterName.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
     <ClInclude Include="Boss.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy_small.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -101,9 +110,6 @@
     <ClCompile Include="Bomb.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Blood.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -128,7 +134,19 @@
     <ClCompile Include="Welcome.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="HttpClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EnterName.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="Boss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy_small.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -225,6 +243,9 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\bmp\welcome.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bmp\bitmap10.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

@@ -56,10 +56,10 @@ BOOL CBomb::Draw(CDC* pDC, BOOL bPause)
 			m_ptPos.y = m_ptPos.y - 12;
 		}
 	}
-	return m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
+	return m_Images.Draw(pDC, m_BulletType, m_ptPos, ILD_TRANSPARENT);
 }
 
 BOOL CBomb::LoadImage()
 {
-	return CGameObject::LoadImageW(m_Images, IDB_blue_bullet, RGB(0, 0, 0), 4, 10, 1);
+	return CGameObject::LoadImageW(m_Images, IDB_Bomb, RGB(255, 255, 255), 4, 28, 1);
 }
