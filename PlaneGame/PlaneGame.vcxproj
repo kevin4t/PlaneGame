@@ -31,7 +31,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
-    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfMfc>Static</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -93,6 +93,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -184,10 +185,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Background.h" />
+    <ClInclude Include="Backhole.h" />
     <ClInclude Include="Blood.h" />
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="Bomb_enemy.h" />
     <ClInclude Include="Boss.h" />
+    <ClInclude Include="Boss_big.h" />
+    <ClInclude Include="Boss_small.h" />
     <ClInclude Include="Buff.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="Enemy_small.h" />
@@ -209,10 +213,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Backhole.cpp" />
     <ClCompile Include="Blood.cpp" />
     <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Bomb_enemy.cpp" />
     <ClCompile Include="Boss.cpp" />
+    <ClCompile Include="Boss_big.cpp" />
+    <ClCompile Include="Boss_small.cpp" />
     <ClCompile Include="Buff.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="Enemy_small.cpp" />
@@ -239,9 +246,14 @@
     <ResourceCompile Include="PlaneGame.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="res\PlaneGame.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="C:\Users\葉蕖\Desktop\blackhole.bmp" />
+    <Image Include="C:\Users\葉蕖\Desktop\blackhole1.bmp" />
+    <Image Include="C:\Users\葉蕖\Desktop\boss_big.bmp" />
+    <Image Include="C:\Users\葉蕖\Desktop\boss_small.bmp" />
     <Image Include="res\ball.BMP" />
     <Image Include="res\bitmap1.bmp" />
     <Image Include="res\bmp\bg.bmp" />
@@ -275,6 +287,8 @@
   <ItemGroup>
     <Media Include="C:\Users\葉蕖\Desktop\bullet.wav" />
     <Media Include="C:\Users\葉蕖\Desktop\用VC写的飞机大战游戏源码\Resources\sound\bullet.mp3" />
+    <Media Include="res\game_music.wav" />
+    <Media Include="res\hello.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,18 +4,32 @@
 
 CImageList CBomb_enemy::m_Images;
 
-CBomb_enemy::CBomb_enemy(int x, int y, int nMontion) :CGameObject(x,y), m_nMotion(nMontion)
-{
-}
-
 CBomb_enemy::~CBomb_enemy(void)
 {
 }
 BOOL CBomb_enemy::Draw(CDC* pDC, BOOL bPause)
 {
-	if (!bPause)
+	if (m_nChange == 0)
+		m_ptPos.y = m_ptPos.y + 8;
+	if (m_nChange == 1)//ÓÒÆ«
 	{
-		m_ptPos.y = m_ptPos.y +8* m_nMotion;
+		m_ptPos.x = m_ptPos.x + 4;
+		m_ptPos.y = m_ptPos.y + 8;
+	}
+	if (m_nChange == 2)
+	{
+		m_ptPos.x = m_ptPos.x + 6;
+		m_ptPos.y = m_ptPos.y + 6;
+	}
+	if (m_nChange == -1)//×óÆ«
+	{
+		m_ptPos.x = m_ptPos.x - 4;
+		m_ptPos.y = m_ptPos.y + 8;
+	}
+	if (m_nChange == -2)
+	{
+		m_ptPos.x = m_ptPos.x - 6;
+		m_ptPos.y = m_ptPos.y + 6;
 	}
 
 	if (m_ptPos.y > GAME_HEIGHT + CBomb_enemy_HEIGHT)

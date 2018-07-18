@@ -12,7 +12,10 @@ public:
 	CEnemy_middle(CMe*);
 	~CEnemy_middle();
 	BOOL Draw(CDC* pDC, BOOL bPause);
-
+	BOOL IsBoss()
+	{
+		return FALSE;
+	}
 	static BOOL LoadImage();
 
 	CRect GetRect()

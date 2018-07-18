@@ -6,7 +6,6 @@ CEnemy::CEnemy()
 {
 }
 
-
 CEnemy::~CEnemy()
 {
 }

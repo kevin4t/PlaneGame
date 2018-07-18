@@ -4,7 +4,10 @@ class CBomb_enemy :
 	public CGameObject
 {
 public:
-	CBomb_enemy(int x, int y, int nMontion);
+	CBomb_enemy(int x, int y, int c, int nMontion) :CGameObject(x, y), m_nChange(c),m_nMotion(nMontion)
+	{
+		m_nPx = x; m_nPy = y;
+	}
 
 	~CBomb_enemy(void);
 
@@ -20,5 +23,7 @@ private:
 	static const int CBomb_enemy_HEIGHT = 10;
 	static CImageList m_Images;
 	int    m_nMotion;
+	int m_nChange;
+	int m_nPx, m_nPy;
 };
 

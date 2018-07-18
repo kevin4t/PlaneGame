@@ -71,6 +71,6 @@ void CEnemy_small::AddBomb(CObList* listObj, CMe* myPlane)
 		by = TRUE;
 	if (by &&pt.x >= mpt.x - 50 && pt.x < mpt.x + 50)
 	{
-		listObj[enBall].AddTail(new CBomb_enemy(pt.x + 14, pt.y + 18, this->GetMontion()));
+		listObj[enBall].AddTail(new CBomb_enemy(pt.x + 14, pt.y + 18, 0, this->GetMontion()));
 	}
 }

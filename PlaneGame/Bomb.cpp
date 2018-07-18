@@ -10,31 +10,31 @@ CBomb::~CBomb(void)
 
 BOOL CBomb::Draw(CDC* pDC, BOOL bPause)
 {
-	if(change==0)
+	if(m_nChange==0)
 	m_ptPos.y = m_ptPos.y - 12;
-	if (change == 1)//ÓÒÆ«
+	if (m_nChange == 1)//ÓÒÆ«
 	{
 		m_ptPos.x = m_ptPos.x + 6;
 		m_ptPos.y = m_ptPos.y - 12;
 	}
-	if (change == 2)
+	if (m_nChange == 2)
 	{
 		m_ptPos.x = m_ptPos.x + 9;
 		m_ptPos.y = m_ptPos.y - 9;
 	}
-	if (change == -1)//×óÆ«
+	if (m_nChange == -1)//×óÆ«
 	{
 		m_ptPos.x = m_ptPos.x - 6;
 		m_ptPos.y = m_ptPos.y - 12;
 	}
-	if (change == -2)
+	if (m_nChange == -2)
 	{
 		m_ptPos.x = m_ptPos.x - 9;
 		m_ptPos.y = m_ptPos.y - 9;
 	}
-	if (change == 3)
+	if (m_nChange == 3)
 	{
-		if (m_ptPos.x - px < 50)
+		if (m_ptPos.x - m_nPx < 50)
 		{
 			m_ptPos.x = m_ptPos.x + 4;
 			m_ptPos.y = m_ptPos.y - 2;
@@ -44,9 +44,9 @@ BOOL CBomb::Draw(CDC* pDC, BOOL bPause)
 			m_ptPos.y = m_ptPos.y - 12;
 		}
 	}
-	if (change == -3)
+	if (m_nChange == -3)
 	{
-		if (m_ptPos.x - px > -50)
+		if (m_ptPos.x - m_nPx > -50)
 		{
 			m_ptPos.x = m_ptPos.x - 4;
 			m_ptPos.y = m_ptPos.y - 2;
@@ -56,7 +56,7 @@ BOOL CBomb::Draw(CDC* pDC, BOOL bPause)
 			m_ptPos.y = m_ptPos.y - 12;
 		}
 	}
-	return m_Images.Draw(pDC, m_BulletType, m_ptPos, ILD_TRANSPARENT);
+	return m_Images.Draw(pDC, m_nBulletType, m_ptPos, ILD_TRANSPARENT);
 }
 
 BOOL CBomb::LoadImage()

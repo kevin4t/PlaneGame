@@ -9,7 +9,8 @@ CMe::CMe(void)
 	m_nHorMotion = 0;
 	m_nVerMotion = 0;
 	m_nWait = 0;
-	m_NoEnemy = FALSE;
+	m_bNoEnemy = FALSE;
+	m_bRealNoEnemy = FALSE;
 }
 
 CMe::~CMe(void)
@@ -35,12 +36,12 @@ BOOL CMe::Draw(CDC* pDC, BOOL bPause)
 	if (m_ptPos.y > 1000-116)m_ptPos.y -= 10;
 
 	//无敌时间限制
-	if (m_NoEnemy == TRUE)
+	if (m_bNoEnemy == TRUE)
 	{
 		m_nCount++;
 	}
-	if (m_nCount == 200)m_NoEnemy = FALSE;
-	return m_Images.Draw(pDC, m_NoEnemy, m_ptPos, ILD_TRANSPARENT);
+	if (m_nCount == 200)m_bNoEnemy = FALSE;
+	return m_Images.Draw(pDC, m_bNoEnemy, m_ptPos, ILD_TRANSPARENT);
 }
 
 BOOL CMe::LoadImage()
@@ -68,10 +69,19 @@ void CMe:: WhosYourDaddy(BOOL TF)
 	{
 		m_nCount = 0;
 	}
- 	m_NoEnemy = TF;
+ 	m_bNoEnemy = TF;
 }
-
+void CMe::WZH()
+{
+	m_nCount = 666;
+	m_bRealNoEnemy = TRUE;
+	m_bNoEnemy = TRUE;
+}
 BOOL CMe::IsNoEnemy()
 {
-	return m_NoEnemy;
+	return m_bNoEnemy;
+}
+BOOL CMe::IsRealNoEnemy()
+{
+	return m_bRealNoEnemy;
 }

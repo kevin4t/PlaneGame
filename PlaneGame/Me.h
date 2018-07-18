@@ -42,18 +42,18 @@ public:
 
 	//无敌模式
 	void WhosYourDaddy(BOOL);
+	void WZH();
 	BOOL IsNoEnemy();
-
-
+	BOOL IsRealNoEnemy();
 	//获取子弹类型
 	int GetBullet()
 	{
-		return m_bullet;
+		return m_nBullet;
 	}
 
 	void SetBullet(int type)
 	{
-		m_bullet = type;
+		m_nBullet = type;
 	}
 
 public:
@@ -65,7 +65,8 @@ private:
 	int    m_nHorMotion;//飞机水平运行方向0->静止，1->右 -1->左
 	int    m_nVerMotion;//飞机垂直运行方向0->静止，1->上 -1->下
 	int    m_nWait;//发射延时
-	BOOL   m_NoEnemy;
+	BOOL   m_bNoEnemy;
+	BOOL   m_bRealNoEnemy;
 	int	   m_nCount;//无敌时间
-	int    m_bullet = 0;//子弹类型
+	int    m_nBullet = 0;//子弹类型
 };

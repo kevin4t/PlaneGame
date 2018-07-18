@@ -8,7 +8,7 @@ public:
 	//枚举
 	enum ObjType { enEnemy, enBomb, enBall, enExplosion, enBlood, enBuff };
 
-	CBuff(int); //0:加血, 1:防护罩, 2:子弹（1）, 3:子弹（2）
+	CBuff(); //0:加血, 1:防护罩, 2:子弹（1）, 3:子弹（2）
 	~CBuff();
 	BOOL Draw(CDC* pDC, BOOL bPause);
 
@@ -21,6 +21,6 @@ public:
 	void GetBuff(CObList* listObj, CMe* myPlane);
 private:
 	static CImageList m_Images;
-	int m_Type;
+	int m_nType;
 };
 

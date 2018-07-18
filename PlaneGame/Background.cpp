@@ -13,7 +13,7 @@ CBackground::~CBackground(void)
 
 BOOL CBackground::Draw(CDC* pDC, BOOL bPause)
 {
-	return m_Images.Draw(pDC, 0, m_ptPos, ILD_TRANSPARENT);
+	return m_Images.Draw(pDC, m_nScene, m_ptPos, ILD_TRANSPARENT);
 }
 
 BOOL CBackground::LoadImage()

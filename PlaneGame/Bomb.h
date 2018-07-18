@@ -5,9 +5,9 @@ class CBomb :
 	public CGameObject
 {
 public:
-	CBomb(int x, int y, int c, int type) :CGameObject(x, y), change(c), m_BulletType(type)
+	CBomb(int x, int y, int c, int type) :CGameObject(x, y), m_nChange(c), m_nBulletType(type)
 	{
-		px = x; py = y;
+		m_nPx = x; m_nPy = y;
 	}
 	~CBomb(void);
 	
@@ -22,7 +22,7 @@ public:
 private:
 	static const int BOMB_HEIGHT = 20;
 	static CImageList m_Images;
-	int change;
-	int px,py;
-	int m_BulletType;
+	int m_nChange;
+	int m_nPx,m_nPy;
+	int m_nBulletType;
 };

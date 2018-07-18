@@ -84,6 +84,15 @@
     <ClInclude Include="Enemy.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Boss_big.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Boss_small.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Backhole.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneGame.cpp">
@@ -149,6 +158,15 @@
     <ClCompile Include="Enemy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Boss_big.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Boss_small.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Backhole.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="PlaneGame.rc">
@@ -159,6 +177,7 @@
     <None Include="res\PlaneGame.rc2">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\PlaneGameDoc.ico">
@@ -248,10 +267,28 @@
     <Image Include="res\bmp\bitmap10.bmp">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="C:\Users\葉蕖\Desktop\blackhole.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\葉蕖\Desktop\boss_big.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\葉蕖\Desktop\boss_small.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\葉蕖\Desktop\blackhole1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <Media Include="C:\Users\葉蕖\Desktop\用VC写的飞机大战游戏源码\Resources\sound\bullet.mp3" />
     <Media Include="C:\Users\葉蕖\Desktop\bullet.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\game_music.wav">
+      <Filter>资源文件</Filter>
+    </Media>
+    <Media Include="res\hello.wav">
       <Filter>资源文件</Filter>
     </Media>
   </ItemGroup>

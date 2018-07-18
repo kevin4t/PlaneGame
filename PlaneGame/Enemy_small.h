@@ -11,7 +11,10 @@ public:
 	CEnemy_small(void);
 	~CEnemy_small(void);
 	BOOL Draw(CDC* pDC, BOOL bPause);
-	
+	BOOL IsBoss()
+	{
+		return FALSE;
+	}
 
 	static BOOL LoadImage();
 

@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CBackground" Collapsed="true">
+    <Position X="5" Y="5" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="5.312" />
+        <Point X="5" Y="5.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAAgAgCAAAAAAAAAAAAAAAAAAQCAABAAAAA=</HashCode>
+      <FileName>Background.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBackhole" Collapsed="true">
+    <Position X="5" Y="11.5" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="11.812" />
+        <Point X="5" Y="11.812" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAAABgAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Backhole.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBlood" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="6.375" />
+        <Point X="5" Y="6.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAECIAAAAAAAAgAAAAAAAAAAAAABAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Blood.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBomb" Collapsed="true">
+    <Position X="5" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="CGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="10.128" />
+        <Point X="5.75" Y="10.128" />
+        <Point X="5.75" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAUAIABAAAAAAgBAAAAAAAAAIAAAAAAAAQABABAAAAA=</HashCode>
+      <FileName>Bomb.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBomb_enemy" Collapsed="true">
+    <Position X="6.75" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="CGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="10.128" />
+        <Point X="7.5" Y="10.128" />
+        <Point X="7.5" Y="10.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gEEAIghAAAAAAgBAAAAAAAAAACAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Bomb_enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBoss" Collapsed="true">
+    <Position X="10.25" Y="10" Width="1.5" />
+    <InheritanceLine Type="CEnemy" FixedToPoint="true">
+      <Path>
+        <Point X="8.75" Y="9.927" />
+        <Point X="8.75" Y="10.375" />
+        <Point X="10.25" Y="10.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAIEAAAAAAEAAAAAAAAAAAAAYAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Boss.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBoss_big" Collapsed="true">
+    <Position X="12.5" Y="10.5" Width="1.5" />
+    <InheritanceLine Type="CBoss" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="10.312" />
+        <Point X="12.125" Y="10.312" />
+        <Point X="12.125" Y="10.875" />
+        <Point X="12.5" Y="10.875" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAABAAgAAAgBEAAAAAAAADAQAAQEAAAJAAAA=</HashCode>
+      <FileName>Boss_big.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBoss_small" Collapsed="true">
+    <Position X="12.5" Y="9.5" Width="1.5" />
+    <InheritanceLine Type="CBoss" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="10.312" />
+        <Point X="12.125" Y="10.312" />
+        <Point X="12.125" Y="9.75" />
+        <Point X="12.5" Y="9.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAABAAgAAAABEAAAAABAABAAAAQAAAAJBCAA=</HashCode>
+      <FileName>Boss_small.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CBuff" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="7.375" />
+        <Point X="5" Y="7.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAAAAAAAAgAAAIAAAAAAAAAAAAAIAQAAAAABBAA=</HashCode>
+      <FileName>Buff.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEnemy" Collapsed="true">
+    <Position X="8" Y="9.25" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="9.625" />
+        <Point X="8" Y="9.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAABECAAAABAQAAAAAQAAAAAABAA=</HashCode>
+      <FileName>Enemy.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEnemy_small" Collapsed="true">
+    <Position X="10.25" Y="8" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CEnemy_small::ObjType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Enemy_small.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <InheritanceLine Type="CEnemy" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.688" Y="9.25" />
+        <Point X="8.688" Y="8.312" />
+        <Point X="10.25" Y="8.312" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEAIAQAAAAAAgAAAAJEAAAAAAAQAAgACQAAAABAAAA=</HashCode>
+      <FileName>Enemy_small.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEnemy_middle" Collapsed="true">
+    <Position X="10.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAKAAAAgQAAgAAAABEAAAAAAAQAAgACQAAAAAAAAA=</HashCode>
+      <FileName>Enemy_middle.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CEnterName" Collapsed="true">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAABAAAAAwAAAEAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>EnterName.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CExplosion" Collapsed="true">
+    <Position X="5" Y="8" Width="1.5" />
+    <InheritanceLine Type="CGameObject" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.813" />
+        <Point X="2.375" Y="6.813" />
+        <Point X="2.375" Y="9.052" />
+        <Point X="5.688" Y="9.052" />
+        <Point X="5.688" Y="8.677" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAGAIAAAABAAAgAAAAAAAAAAAAAAAAAAAQAABAAAAAA=</HashCode>
+      <FileName>Explosion.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CExplosion_me" Collapsed="true">
+    <Position X="6.75" Y="8" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.813" />
+        <Point X="2.375" Y="6.813" />
+        <Point X="2.375" Y="9.052" />
+        <Point X="7.5" Y="9.052" />
+        <Point X="7.5" Y="8.677" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAGAIAAAAAAAAgEAAAAAAAAAAAAAAAAAAQAAAAAQAAA=</HashCode>
+      <FileName>Explosion_me.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CGameObject" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAgAAAAAAAAAAAAIAAAAAAQAAgAAAAEA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CHttpClient" Collapsed="true">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgAQAAAAAIAAACAAAAAAAAAQAIEAAAAgAABEAAA=</HashCode>
+      <FileName>HttpClient.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMainFrame" Collapsed="true">
+    <Position X="8.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAACAAAiAAAgCAAAgAAAAAAAAAAABA=</HashCode>
+      <FileName>MainFrm.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CMe" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="3.339" />
+        <Point X="5" Y="3.339" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>EAlAMAIAAgAAAgAKAEQIEAAACIAAAgACAQAAAZBABAE=</HashCode>
+      <FileName>Me.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPlaneGameApp" Collapsed="true">
+    <Position X="8.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABABAAAAQAAAABAAAAAAA=</HashCode>
+      <FileName>PlaneGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPlaneGameDoc" Collapsed="true">
+    <Position X="10.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAACAAAgAAgASggAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>PlaneGameDoc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CPlaneGameView" Collapsed="true">
+    <Position X="10.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAgAABAABAAgACSIBopAAAkSIAQAAAAAwoAAAAQYA=</HashCode>
+      <FileName>PlaneGameView.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CWelcome" Collapsed="true">
+    <Position X="5" Y="4" Width="1.5" />
+    <InheritanceLine Type="CGameObject" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="6.812" />
+        <Point X="2.375" Y="6.812" />
+        <Point X="2.375" Y="4.375" />
+        <Point X="5" Y="4.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAEQIAAAAIAACgAAAAAAAQAAACAAAAAAAQABAAAAgAI=</HashCode>
+      <FileName>Welcome.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
